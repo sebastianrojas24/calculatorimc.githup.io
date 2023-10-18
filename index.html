@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Calculadora de IMC </title>
+</head>
+<body>
+ <div class="container">
+    <h1>Calculadora de IMC</h1>
+    <div class="container">
+    <div class="info">
+      <h2>Bienvenidos</h2>
+      <p>¡Hola! Mi nombre es Sebastian Rojas. Te doy la bienvenida a esta calculadora de Índice de Masa Corporal (IMC).               <a href="imc.html">      ¿Qué es el IMC?</a></p>
+      <p>Ingresa tus datos a continuación para calcular tu IMC:</p>
+    </div>
+    <div class="form">
+      <label for="gender">Género:</label>
+      <select id="gender">
+        <option value="hombre">Hombre</option>
+        <option value="mujer">Mujer</option>
+      </select>
+      <label for="age">Edad:</label>
+      <input type="number" id="age" required>
+      <label for="height">Estatura (metros):</label>
+      <input type="number" id="height" step="0.01" required>
+      <label for="weight">Peso (kg):</label>
+      <input type="number" id="weight" step="0.1" required>
+      <button id="calculateBtn">Calcular IMC</button>
+    </div>
+    <div id="result">
+    </div>
+    
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAap3_qpmFlq2wj-Ab6bIHs_J5mXoYhA68ZA&usqp=CAU" alt="IMC">
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
